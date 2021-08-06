@@ -7,7 +7,7 @@ html{
 }
 
 a{
-    texs-decoration: none;
+    text-decoration: none;
     color: inherit;
 }
 
@@ -24,7 +24,10 @@ h1, h2, h3, h4, h5, h6{
 
 body{
     color: #2F3035;
-    font-family: sans-serif;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .container{
@@ -35,9 +38,13 @@ body{
 
 .header__top-inner{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 122px;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .menu__item{
@@ -47,3 +54,100 @@ body{
 .menu__item + .menu__item{
     padding-left: 50px;
 }
+
+.header__box{
+    display: flex;
+}
+
+.header__adress{
+    margin-right: 86px;
+    width: 265px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.header__adress::before{
+    containt: "";
+    position: absolute;
+    background-image: url('../images/adres/adress-icon.svg');
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -10px;
+}
+
+.user-list{
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.user-list__item{
+    padding-right: 10px;
+}
+
+.basket{
+    position: relative;
+}
+
+.basket__num{
+    position: absolute;
+    font-family: 'SFProDisplay-Medium', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #1c62cd;
+    background-repeat: 50%;
+    text-align: center;
+    bottom: -15px;
+    right: -14px;
+    border-radius: 15px;
+}
+
+.menu-categories{
+    background-color: #f0f0f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 53px;
+}
+
+.menu-categories__item{
+    position: relative;
+}
+
+.menu-categories__link{
+    transition: all .3s;
+    font-weight: 400;
+    padding: 15px 0 14px;
+    position: relative;
+}
+
+.menu-categories__link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    background-color: #1c62cd;
+    height: 3px;
+    bottom: -2px;
+    transition: all .3s;
+    right: 0;
+}
+
+.menu-categories__link:hover{
+    color: #000;
+}
+
+.menu-categories__link:hover::before{
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+
+
+
