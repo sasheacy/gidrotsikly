@@ -4,6 +4,14 @@ $(function(){
         dots: true,
         prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg" alt=""></button>',
         nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-right.svg" alt=""></button>',
+        responsive: [
+            {
+              breakpoint: 969,
+              settings: {
+                arrows: false
+              }
+            }
+          ]
     });
 
 
@@ -11,21 +19,53 @@ $(function(){
         e.preventDefault();
 
         $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+        $($(this).closest('.tabs-wrapper').siblings().find('div')).removeClass('tabs-content--active');
 
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
+
+        $('.product-slider').slick('setPosition');
     });
 
-    $('.product-item__favorite').on('click', function(){
-        $('.product-item__favorite').toggleClass('product-item__favorite--active')
-    });
+    // $('.product-item__favorite').on('click', function(){
+    //     $('.product-item__favorite').toggleClass('product-item__favorite--active')
+    // });
 
     $('.product-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt=""></button>',
         nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 1301,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                    breakpoint: 1201,
+                    settings: {
+                    slidesToShow: 3,
+                    dots: true
+                }
+            },
+            {
+                    breakpoint: 870,
+                    settings: {
+                    slidesToShow: 2,
+                    dots: true
+                }
+            },
+            {
+                    breakpoint: 590,
+                    settings: {
+                    slidesToShow: 1,
+                    dots: true
+                }
+            }
+        ]
     });
 
 
@@ -54,6 +94,25 @@ $(function(){
         $('.product-item__wrapper').addClass('product-item__wrapper--list');
     });
 
+    $(".rate-yo").rateYo({
+        ratedFill: "#1c62cd",
+        spacing: "7px",
+        normalFill: "#c4c4c4",
+    });
+
+    $('.menu__btn').on('click', function(){
+        $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+    });
+
+    $('.footer__topdrop').on('click', function(){
+        $(this).next().slideToggle();
+        $(this).toggleClass('footer__topdrop--active');
+    });
+
+    $('.aside__btn').on('click', function(){
+        $(this).next().slideToggle();
+    });
+    
 
 });
 
@@ -86,3 +145,27 @@ function stockButtons(){
 }
 
 stockButtons()
+
+function addToFavoriteBtn(){
+    let favBtns = document.querySelectorAll('.product-item__favorite');
+    
+    for(let i = 0; i < favBtns.length; i++){
+        favBtns[i].addEventListener('click', function(e){
+            let currentBtn = e.target;
+
+            currentBtn.classList.add('product-item__favorite--active');
+
+            let favBtnsActive = document.querySelectorAll('.product-item__favorite--active');
+
+            for(let i = 0; i < favBtnsActive.length; i++){
+                favBtnsActive[i].addEventListener('click', function(e){
+                    let currentBtn = e.target;
+
+                    currentBtn.classList.remove('product-item__favorite--active');
+                });
+            }
+        });
+    }
+}
+
+addToFavoriteBtn()

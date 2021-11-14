@@ -16,15 +16,21 @@
   <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   </head>
 
   <body>
   
-  <header class="header">
-    <div class="header__top">
-      <div class="container"></div>
+    <header class="header">
+      <div class="header__top">
+        <div class="container"></div>
         <div class="header__top-inner">
           <nav class="menu">
+            <button class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">
@@ -43,7 +49,7 @@
               </li>
             </ul>
           </nav>
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img class="logo__img" src="images/logo.svg">
           </a>
           <div class="header__box">
@@ -69,51 +75,184 @@
               </li>
             </ul>
           </div>
-      </div>
-    <div class="header__bottom">
-      <div class="container">
-
-          <ul class="menu-categories">
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Квадроциклы</a>
+        </div>
+  
+        <ul class="menu-mobile__list">
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/user.svg" alt="">
+              <p>Войти</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/user.svg" alt="">
+              <p>Регистрация</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/heart.svg" alt="">
+              <p>Избранное</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/basket.svg" alt="">
+              <p>Корзина</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/house.svg" alt="">
+              <p>Магазины</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/procent.svg" alt="">
+              <p>Акции</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/box.svg" alt="">
+              <p>Доставка и оплата</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Квадроциклы</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Катера</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Гидроциклы</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Лодки</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Вездеходы</p>
+            </a>
+          </li>
+  
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Снегоходы</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Двигатели</p>
+            </a>
+          </li>
+  
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Запчасти</p>
+            </a>
+          </li>
+        </ul>
+          <div class="menu__mobile-linewrapper">
+          <ul class="menu__mobile-line">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Магазины
+              </a>
             </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Катера</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Акции
+              </a>
             </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Гидроциклы</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Лодки</a>
-              </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Вездеходы</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Снегоходы</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Двигатели</a>
-            </li>
-            <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Запчасти
-
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Доставка и оплата
               </a>
             </li>
           </ul>
+        </div>
+  
+          <div class="header__bottom">
+            <div class="container">
+  
+              <ul class="menu-categories">
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Квадроциклы</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Катера</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Гидроциклы</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Лодки</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Вездеходы</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Снегоходы</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Двигатели</a>
+                </li>
+                <li class="menu-categories__item">
+                  <a class="menu-categories__link" href="#">Запчасти
+  
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+        
+    </header>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner modile-overflow">
+      <ul class="breadcrumbs__list ">
+        <li class="breadcrumbs__list-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <span>Гидроциклы</span>
+        </li>
+      </ul>
       </div>
     </div>
-  </header>
-
-  <div class="breadcrumbs">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__list-item">
-        <a href="#">Главная</a>
-      </li>
-      <li class="breadcrumbs__list-item">
-        <span>Гидроциклы</span>
-      </li>
-    </ul>
   </div>
 
     <section class="catalog">
@@ -122,12 +261,14 @@
           Гидроциклы
         </h2>
         <div class="catalog__filter">
-          <div class="catalog__filter-items">
-          <button>Полноприводные</button>
-          <button>от 5000</button>
-          <button>BRP</button>
-          <button>еще</button>
-      </div>
+          <div class="catalog__filter-itemsinner modile-overflow">
+            <div class="catalog__filter-items">
+              <button>Полноприводные</button>
+              <button>от 5000</button>
+              <button>BRP</button>
+              <button>еще</button>
+            </div>
+          </div>
       <div class="catalog__filter-btn">
         <select class="filter-style select-item">
           <option>По полулярности</option>
@@ -160,15 +301,18 @@
       </div>
     </div>
       <div class="catalog__inner">
+        <div class="aside__btn">
+          Фильтр
+        </div>
         <aside class="catalog__inner-asite aside-filter">
-          <div class="tabs-wrapper">
+          <div class="tabs-wrapper tabs-wrapper--no-scroll">
     <div class="tabs aside-filter__tabs">
       <a class="tab aside-filter__tab tab--active" 
-      href="#"><span>Параметры</span></a>
-      <a class="tab aside-filter__tab" href="#"><span>по марке</span></a>
+      href="#filter-1"><span>Параметры</span></a>
+      <a class="tab aside-filter__tab" href="#filter-2"><span>по марке</span></a>
     </div>
     <div class="tabs-container">
-      <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+      <div id="filter-1" class="tabs-content aside-filter__tabs-content tabs-content--active">
 
       <form class="aside-filter__form">
         <ul class="aside-filter__list">
@@ -388,10 +532,9 @@
         </form>
 
       </div>
-      <div class="tabs-content aside-filter__tabs-content">content-2</div>
-    </div>
-  </div>
-      </aside>
+          <div id="filter-2" class="tabs-content aside-filter__tabs-content">content-2</div>
+      </div>
+    </aside>
       <div class="catalog__inner-list">
         <div class="product-item__wrapper">
           <button class="product-item__favorite"></button>
@@ -401,7 +544,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -451,7 +594,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -501,7 +644,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -526,7 +669,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -551,7 +694,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -576,7 +719,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -626,7 +769,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -676,7 +819,7 @@
           <a  class="product-item__notify-link" 
           href=""><span>Сообщить о поступлении</span>
         </a>
-          <a class="product-item product-item--sale" href="#">
+          <a class="product-item product-item" href="#">
             <p class="product-item__hover-text">
               посмотреть товар
             </p>
@@ -717,7 +860,7 @@
       <div class="footer__top">
         <div class="footer__top-inner">
           <div class="footer__top-item footer__top-newslatter">
-            <h6 class="footer__top-item">
+            <h6 class="footer__top-item footer__top-item--first">
               Подпишитесь на нашу рассылку 
               и узнавайте о акциях быстрее
             </h6>
@@ -726,8 +869,8 @@
               <button class="footer-form__btn" type="submit">Отправить</button>
             </form>
           </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-item">
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__topdrop">
               Информация
             </h6>
             <ul class="footer-list">
@@ -738,14 +881,10 @@
             </ul>
           </div>
           <div class="footer__top-item">
-            <h6 class="footer__top-item">
+            <h6 class="footer__top-title footer__topdrop">
               Интернет-магазин
-              Доставка и самовывоз
-              Оплата
-              Возврат-обмен
-              Новости
             </h6>
-            <ul class="footer-list">
+            <ul class="footer-list ">
               <li class="footer-list__item"><a href="#">Доставка и самовывоз</a></li>
               <li class="footer-list__item"><a href="#">Оплата</a></li>
               <li class="footer-list__item"><a href="#">Возврат-обмен</a></li>
