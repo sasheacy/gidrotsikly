@@ -80,7 +80,7 @@ body{
 .header__adress::before{
     content: "";
     position: absolute;
-    background-image: url('../images/adres/adress-icon.svg');
+    background-image: url('../images/adress.svg');
     width: 30px;
     height: 30px;
     left: 0;
@@ -199,6 +199,7 @@ body{
     left: 0;
 }
 
+
 .banner-section__inner{
     display: flex;
     justify-content: space-between;
@@ -219,6 +220,14 @@ body{
     padding: 0;
     z-index: 5;
     cursor: pointer;
+}
+
+.banner-section__slider-btnprev{
+    left: 20px;
+}
+
+.banner-section__slider-btnnext{
+    right: 20px;
 }
 
 .slick-dots{
@@ -1885,6 +1894,16 @@ button.catalog__filter-btnline{
 
 .product-slider .slick-dots .slick-active button{
     background-color: #1c62cd;
+}
+
+.product-slider__item{
+    max-height: 460px;
+}
+
+
+.product-item--sale{
+    min-height: 460px;
+    max-height: 460px;
 }
 
 .product-card__btn-mobile{
